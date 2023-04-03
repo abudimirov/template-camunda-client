@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: template-camunda-client
+server:
+  port: 8081
+camunda:
+  bpm:
+    client:
+      base-url: ${CAMUNDA_REMOTE_URL:http://localhost:8080/engine-rest}
+  autoDeploy:
+    enabled: true
